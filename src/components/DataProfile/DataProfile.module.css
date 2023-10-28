@@ -1,0 +1,225 @@
+.containerProfiler{
+    overflow: hidden;
+    border-Radius: 3em 0 3em 0 ;
+}
+.avatarContainer{
+    height: 17vh;
+    width: 17vh;
+    border-radius: 50%;
+    background-image: url("../../assets/img/user.png");
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 0 0 20px #BA338A ;
+   
+
+}
+/*.subcontainer{
+   height: 60vh; 
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+.containerDataName{
+    margin-top: 20px;
+    height: 40px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.dataNameAndSurname{
+    border: solid 1px #BA338A;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 5px;
+    
+}
+.dataaddres{
+    border: solid 1px #BA338A;
+    height: 12vh;
+    width: 31.5vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.controlle{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dataEmail{
+    border: solid 1px #BA338A;
+    height: 40px;
+    width: 300px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 5px;
+    overflow-x: scroll;
+}
+.dataEmail::-webkit-scrollbar {
+    height: 3px; 
+}
+
+.dataEmail::-webkit-scrollbar-thumb {
+    background-color: #BA338A; 
+}
+
+.profileimg{
+  border: solid 1px #BA338A;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit:cover;
+  background-image: url("../../assets/img/user.png");
+  background-position: center;
+  background-size: 100% 100%;
+  box-shadow: 0 0 20px #BA338A ;
+}
+.nameContainer {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: -15px; 
+    left: 0;
+    width: 26%;
+    background-color: none;
+    font-size: 0.7rem;
+} */
+.ant{
+    width:  50vw;
+    height: 35vw;
+    border: solid 3px #e2a6d1;
+    border-Radius: 3em 0 3em 0 ;
+    display: grid;
+    place-items: center;
+
+}
+.ant::-webkit-scrollbar {
+    width: 4px; 
+}
+  
+.ant::-webkit-scrollbar-thumb {
+    background-color: #dd7fc2; 
+}
+@media screen and (max-width: 1273px) {
+    .ant {
+        width: 50vw;
+        height: 45vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ant {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .ant {
+        width: 50vw;
+        height: 54vw;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    .ant {
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ant {
+        width: 80vw;
+        height: 55vw;
+        border: solid 3px #e2a6d1;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .ant {
+        width: 80vw;
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    .ant {
+        width: 80vw;
+        height: 70vw;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    .ant {
+        width: 90vw;
+        height: 75vw;
+    }
+}
+
+@media screen and (max-width: 558px),
+       screen and (max-width: 521px),
+       screen and (max-width: 497px),
+       screen and (max-width: 457px),
+       screen and (max-width: 419px),
+       screen and (max-width: 392px) {
+    .ant {
+        width: 90vw;
+    }
+    .ant {
+        height: 80vw;
+    }
+    .ant {
+        height: 85vw;
+    }
+    .ant {
+        height: 91vw;
+    }
+    .ant {
+        height: 105vw;
+    }
+    .ant {
+        height: 117vw;
+    }
+    .ant {
+        height: 140vw;
+    }
+}
+.containerAvatarEdit{
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+ .editProfile {
+     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.containerAvatarEdit:hover .editProfile {
+    visibility: visible;
+    
+}

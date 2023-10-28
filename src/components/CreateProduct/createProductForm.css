@@ -1,0 +1,80 @@
+.containerForm {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 46vw;
+  
+}
+.inputsContainerII{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.inputsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    margin: 16px 0px;
+}
+
+.fieldAndError{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputsSizesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+.selectDiv{
+    width: 100%;
+}
+
+.createProductError{
+  color: #c12525;
+  font-size: 12px;
+}
+
+.inputsStockContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.createCategoryButton{
+    outline: none;
+    border: none;
+    color:#BA338A;
+    background-color: #ffffff;
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 4px;
+   }
+   .createCategoryButton:hover{
+     cursor: pointer;    
+     color: #c04c98;
+}
+
+@media screen and (max-width: 767px) {
+  .containerForm{
+    width: 90%;
+    padding: 20px;
+  }
+  .inputsContainerII{
+    width: 100%;
+    justify-content: center;
+  }
+  
+}

@@ -1,0 +1,42 @@
+.containerFilter{
+    margin: 16px 0px;
+    display: flex;
+    justify-content: center;
+}
+.subcontainer{
+    display: flex;
+    gap: 10px;
+    width: 40rem;
+    justify-content: space-between;
+}
+.contenselect{
+	width: 100%;
+	position: relative;
+}
+
+@media (max-width: 800px) {
+    .subcontainer {
+        width: auto;
+    }
+    .contenselect {
+        padding: inherit;
+    }
+    .buttonReload {
+        padding: revert;
+    }
+}
+
+@media (max-width: 500px) {
+    .subcontainer {
+        flex-wrap: wrap;
+        gap: 3px;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+    }
+}
+/* @media (max-width: 400px) {
+    .subcontainer {
+        gap: 3px;
+    }
+} */

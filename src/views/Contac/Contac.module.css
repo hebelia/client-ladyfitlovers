@@ -1,0 +1,70 @@
+.continer{
+    min-height: 85vh;
+    display: grid;
+    place-items: center;
+}
+
+.continercontac{
+    position: relative;
+    border-radius: 20px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.continercontac>div{
+    position: relative;
+    height: 60%;
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.twodata{
+    height: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.message{ 
+   position: relative;
+   width: 100%;
+}
+.messageInput{ 
+   position: relative;
+   width: 100%;
+}
+.message1{
+   width: 100%;
+   position: relative;
+}
+.texterror{
+    position: absolute;
+    font-size: 0.8rem;
+    color: red;
+    top: 20px;
+}
+.editinput{
+width: 100%;
+}
+.editinput2{
+width: 100%;
+}
+
+@media (max-width: 768px) {
+    .continercontac {
+        width: inherit;
+        height: inherit;
+    }
+    .continercontac>div {
+        width: 90%;
+    }
+    .messageInput {
+        top: 1rem;
+    }
+}

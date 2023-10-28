@@ -1,0 +1,244 @@
+
+.container {
+  position: relative;
+}
+.cardBox {
+  max-width: 250px;
+}
+
+.container .card {
+  align-items: center;
+  position: relative;
+  width: 250px;
+  min-height: 300px;
+  min-width: 200px;
+  background: #232323;
+  border: solid 2px #e0b3cd;
+  border-radius: 20px 0px 20px 0px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e0b3cd;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "LadyFitLovers";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  transition: 0.5s;
+}
+
+.container .card .imgBx img {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 76px;
+  margin: inherit;
+  text-align: center;
+  transition: 1s;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  margin: inherit;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: inherit;
+  transition: 0.5s;
+  height: 36px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+  background: #e0b3cd;
+}
+
+.container .card .contentBx a:hover {
+  background: #e0b3cd;
+}
+.container .card .contentBx .color span {
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx button {
+  display: inline-block;
+  padding: 10px 20px;
+  background:  #E0B3D3;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: translateY 0.5s;
+  border:none;
+  outline: none;
+
+}
+
+.container .card:hover .contentBx button {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+  cursor: pointer;
+}
+
+.container .card:disabled .contentBx button {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+  cursor: not-allowed;
+}
+
+h3 {
+  margin: 5px;
+  max-width: 100%;
+}
+
+.nameProductCard {
+  color: #111;
+}
+.nameProductCard:hover {
+  color: #c04c98;
+  text-decoration: underline;
+}
+.cardBox {
+  max-width: 250px;
+}
+.buy {
+  text-decoration: none;
+  color: #c04c98;
+}
+.buy:hover{
+  color:#c04c98;
+}
+
+.productWithoutStock{
+  filter:grayscale(100%) 
+}
+
+
+.goToBuy{
+  outline:none;
+  border: none;
+  color:#ba338a;
+  background-color: transparent;
+  font-weight: 700px;
+  cursor:pointer;
+
+}
+
+.oldPrice{
+  text-decoration: line-through;
+  color: #ba338a;
+}
+
+.outOfStock {
+  margin: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+}
+
+.hasSale {
+  text-decoration: line-through;
+}
+
+.offert {
+  color: red;
+}

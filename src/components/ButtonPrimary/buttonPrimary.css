@@ -1,0 +1,30 @@
+.buttonPrimary{
+    outline: none;
+    border: none;
+    background-color: #BA338A;
+    color: #E0B3D3;
+    height: 32px;
+    min-width: 120px;
+    border-radius: 10px;
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 14px;
+   }
+   .buttonPrimary:hover{
+  cursor: pointer;
+  background-color: #c04c98
+   }
+
+   .buttonPrimaryDisabled{
+    outline: none;
+    border: none;
+    background-color: #c04c98;
+    color: #E0B3D3;
+    height: 42px;
+    min-width: 150px;
+    border-radius: 15px;
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: not-allowed;
+   }

@@ -1,0 +1,28 @@
+.inputCreateAcountContainer{
+    display: flex;
+    gap:16px;
+}
+
+.containerFormCreateAcount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .fieldAndError{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  
+  .createProductError{
+    color: #c12525;
+    font-size: 12px;
+    position: absolute;
+    top: 19px;
+  }
+  
+  
