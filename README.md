@@ -1,12 +1,3 @@
-# LADYFITLOVERS: women's sportswear and swimsuits e-commerce.
-
-## Final project at Henry
-
-
-
-#ba338a
-#E0B3D3
-
 <div align="center">
 <img src="./public/svg/LADYFIT1.svg" alt="icon" height="200">
 </div>
@@ -174,7 +165,7 @@ Contributions and suggestions are what make the open source community such an am
 <br />
 :pushpin: Pushpins to the repository can be done by forking and doing a pull request or by simply opening an "issue" with the tag "improvement".
 
-Suggestions: [⋄ click here ⋄](https://github.com/hebelia/Countries-App/issues) see the full list of proposed features (and known issues).
+Suggestions: [⋄ click here ⋄](https://github.com/hebelia/client-ladyfitlovers/issues) see the full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top"> △ </a>)</p>
 
