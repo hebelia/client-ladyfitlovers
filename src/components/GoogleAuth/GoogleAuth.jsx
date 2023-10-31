@@ -6,15 +6,13 @@ import { useEffect, useState } from "react";
 import { LoginSocialGoogle } from "reactjs-social-login";
 import { GoogleLoginButton } from "react-social-login-buttons";
 
-
-
 const clientId =
-  "521123783257-d2stfpejph6ok0djqqpm8e396dsg10c5.apps.googleusercontent.com";
+  "736423868496-cbr349r6jdmip525oq8d5gnk4sl8708p.apps.googleusercontent.com";
 
 const GoogleAuth = ({ onGoogleLoginSuccess }) => {
   const dispatch = useDispatch();
-  const userId = useSelector((state) => state.user.id)
-  const accessToken2 = useSelector((state) => state.accessToken)
+  const userId = useSelector((state) => state.user.id);
+  const accessToken2 = useSelector((state) => state.accessToken);
 
   useEffect(() => {
     if (userId && accessToken2) {
@@ -28,14 +26,13 @@ const GoogleAuth = ({ onGoogleLoginSuccess }) => {
       profileObj.family_name = "No definido";
     }
     //userId, token, profileObj
-    dispatch(authUser(profileObj, accessToken))
+    dispatch(authUser(profileObj, accessToken));
     onGoogleLoginSuccess();
   };
 
   const onFailure = (res) => {
     console.log("Login Failed: res: ", res);
   };
-
 
   // const onLogoutSuccess = useCallback(() => {
   //   setProfile(null)
@@ -45,13 +42,16 @@ const GoogleAuth = ({ onGoogleLoginSuccess }) => {
     <LoginSocialGoogle
       client_id={clientId}
       onResolve={({ provider, data }) => {
-        onSuccess(data)
+        onSuccess(data);
       }}
       onReject={(err) => {
-        console.log(err)
+        console.log(err);
       }}
     >
-      <GoogleLoginButton text="Ingresar con Google" className={style.containerButton} />
+      <GoogleLoginButton
+        text="Ingresar con Google"
+        className={style.containerButton}
+      />
     </LoginSocialGoogle>
   );
 };
