@@ -41,6 +41,7 @@ const GoogleAuth = ({ onGoogleLoginSuccess }) => {
   return (
     <LoginSocialGoogle
       client_id={clientId}
+      scope="email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
       onResolve={({ provider, data }) => {
         onSuccess(data);
       }}
