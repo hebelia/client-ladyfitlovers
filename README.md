@@ -50,7 +50,7 @@ I'm using markdown "reference style" links for readability.
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributions">Contributions</a></li>
     <!-- <li><a href="#Acknowledgments">Acknowledgments</a></li> -->
-    <li><a href="#License">License</a></li>
+    <!-- <li><a href="#License">License</a></li> -->
     <li><a href="#Contant">Contact</a></li>
   </ul>
 </details>
@@ -177,14 +177,14 @@ Suggestions: [⋄ click here ⋄](https://github.com/hebelia/client-ladyfitlover
 <p align="right">(<a href="#readme-top"> △ </a>)</p> -->
 
 <!-- LICENSE -->
-<h2 id="License">License :copyright:</h2>
+<!-- <h2 id="License">License :copyright:</h2>
 
 <br />
 < Henry Developers Team ©  <a href="https://github.com/ruthosuna92/frontend-ladyfitlovers/graphs/contributors"> 2023  Developers </a> >
 <br />
 <br />
 
-<br />
+<br /> -->
 <!-- CONTACT -->
 
 ## Connect with me &nbsp; 📬
